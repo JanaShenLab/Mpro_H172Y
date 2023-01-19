@@ -1,0 +1,17 @@
+-in:file:s wt_apoMono.pdb 
+-database /home/joec/Applications/rosetta_bin_linux_2017.52.59948_bundle/main/database
+-ddg:weight_file ref2015
+-ddg:iterations 50
+-ddg:dump_pdbs true 
+-ddg:mut_file mutantFile_monomer.txt  
+-ddg:local_opt_only false 
+-ddg:min_cst true
+-ddg:suppress_checkpointing true 
+-in:file:fullatom 
+-ddg:mean false 
+-ddg:min true 
+-ddg:sc_min_only false 
+-ddg:ramp_repulsive true 
+-unmute core.optimization.LineMinimizer 
+-ddg:output_silent true 
+-score:fa_max_dis 9.0
